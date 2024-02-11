@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',  sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 137vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/image/image\ 2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 5px;
+    border-bottom: 5px solid  #222222;
+}
+
+#logo{
+    cursor: pointer;
+    width: 167px;
+    height: 45px;
+    margin: 10px;
+}
+
+
+.sign-in{
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 550px;
+    background: #000000BF;
+    margin-left: 650px;
+      */
+    display: flex;
+    flex-direction: column;
+    margin-left: 450px;
+    background: #000000BF;
+    width: 400px;
+    height: 550px;
+    border-radius: 4px;
+}
+
+h1{
+    margin-left: 45px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+input{
+    width: 314px;
+    height: 50px;
+    margin-left: 45px;
+    margin-top: 17px;
+    background: #303030;
+    border: none;
+    cursor: pointer;
+}
+
+::placeholder{
+    width: 170px;
+    height: 20px;
+    padding-left: 10px;
+    color: #8C8C8C;;
+}
+
+.sign-in button{
+    width: 314px;
+    height: 48px;
+    margin-top: 30px;
+    margin-left: 45px;
+    color: #B3B3B3;
+    background: #E50914;
+    cursor: pointer;
+    border: none;
+}
+
+.inner-sign-in{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    color: #B3B3B3;
+    ;
+}
+
+.content{
+    margin-left: 45px;
+    margin-top: 30px;
+    width: 340px;
+    color: #737373;
+}
+
+.content p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 15.3px;
+}
+
+h2{
+    font-family: Netflix Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#sign-up-now{
+    color: #ffffff;
+}
+
+#Learn{
+    color: #0071EB;
+}
+
+.footer{
+    padding: 30px 15% 10px;
+    background:#000000BF;
+    padding-left: 300px;
+    height: 200px;
+    width: 1340px;
+    margin-top: 50px;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #757575;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #757575;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.footer button{
+    margin-bottom: 10px;
+    color: #333333;
+    padding: 5px 20px;
+    border-radius: 2px;
+    background: #000000;
+    border: none;
+    width: auto;
+    height: 38px;
+    border: 1px;
+}
+
+/*--------media queries----------*/
+
+@media only screen and (max-width: 480px) {
+    .header {
+        width: 100%; /* Further adjusted width for even smaller screens */
+        height: 120vh;
+        height: 100%;
+    }
+
+    #logo{
+        width: 100px;
+        height: 35px;
+    }
+
+    .sign-in {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .sign-in button{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    input {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .content {
+        margin-left: 10px;
+        width: calc(100% - 20px); 
+        margin-left: 20px;
+    }
+
+    .footer {
+        width: 95%;
+        height: 100%;
+        padding-left: 2.5%;
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .footer button {
+        padding: 5px 3px;
+        margin-top: 5px;
+        margin-left: 100px;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .header {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sign-in {
+        margin-left: 50px;
+        width: calc(100% - 100px);
+        margin-top: 50px;
+        height: 700px;
+    }
+
+    input {
+        width: 90%;
+        margin-left: 5%;
+        padding: 40px;
+    }
+
+    ::placeholder{
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .sign-in button{
+        width: 90%;
+        margin-left: 5%;
+        padding: 40px;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .content {
+        margin-left: 40px;
+        width: calc(100% - 50px);
+        margin-top: 50px;
+        font-size: xx-large;
+        font-weight: 700;
+    }
+
+    .content p{
+        line-height: 15.3px;
+    }
+
+    .footer {
+        width: 85%;
+        padding-left: 20%;
+        margin-left: 50px;
+        height: 300px;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        height: 100%; 
+    }
+
+    .sign-in {
+        width: 400px; 
+        margin-left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    input {
+        width: calc(100% - 90px);
+    }
+
+    .content {
+        width: 300px;
+        margin-left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .footer {
+        padding: 30px 10%; 
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .header {
+        height: 1060px; 
+        width: 1685px;
+    }
+
+    .sign-in {
+        width: 550px; 
+        margin-left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    input {
+        width: calc(100% - 90px); 
+    }
+
+    .sign-in button{
+        width: calc(100% - 90px);
+    }
+
+    .content {
+        width: 350px; 
+        margin-left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .footer {
+        padding: 30px 10%;
+    }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Netflix Home page</title>
+</head>
+<body>
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-start items-center px-4">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <img src="/home-images copy/Fill-14.png" alt="">
+          </div>
+      
+          <!-- Hamburger Icon -->
+          <div class="block lg:hidden Hamburger">
+            <button id="menu-toggle" class="text-gray-400 focus:outline-none">
+              <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path class="hidden" id="icon-close" fill-rule="evenodd" clip-rule="evenodd" d="M19.3 4.71a1 1 0 0 0-1.42 0L12 10.59 6.71 5.3a1 1 0 1 0-1.42 1.42L10.59 12 5.3 17.29a1 1 0 0 0 1.42 1.42L12 13.41l5.29 5.29a1 1 0 0 0 1.42-1.42L13.41 12l5.29-5.29a1 1 0 0 0 0-1.42z"/>
+                <path class="block" id="icon-open" fill-rule="evenodd" clip-rule="evenodd" d="M4.7 6.71a1 1 0 0 1 1.41 0L12 11.29l5.29-5.3a1 1 0 1 1 1.42 1.42L13.41 12l5.3 5.29a1 1 0 0 1-1.42 1.42L12 13.41l-5.29 5.3a1 1 0 1 1-1.42-1.42L10.59 12 5.3 6.71a1 1 0 0 1 0-1.42z"/>
+              </svg>
+            </button>
+          </div>
+      
+           <!-- Navigation Links -->
+    <div class="hidden lg:flex lg:items-start lg:w-auto" id="menu">
+        <ul class="text-lg lg:flex justify-start items-start">
+          <li><a class="text-white hover:text-gray-400 py-2 px-4" href="#">Home page</a></li>
+          <li><a class="text-neutral-200 hover:text-gray-400 py-2 px-4" href="#">Series</a></li>
+          <li><a class="text-neutral-200 hover:text-gray-400 py-2 px-4" href="#">Movies</a></li>
+          <li><a class="text-neutral-200 hover:text-gray-400 py-2 px-2" href="#">New and Popular</a></li>
+          <li><a class="text-neutral-200 hover:text-gray-400 py-2 px-4" href="#">My list</a></li>
+        </ul>
+      </div>
+      
+      <!-- User Controls -->
+      <div class="ml-auto text-neutral-200 hover:text-gray-400 py-2 px-4">
+        <div class="user-controls">
+          <img src="/home-images/Vector (2).png" alt="" width="19.31px" height="20px">
+          <p>CHILD</p>
+          <img src="/home-images/Group 3.png" alt="" width="19.31px" height="20px">
+          <img src="/home-images/Group.png" alt="" width="19.31px" height="20px">
+          <img src="/home-images/ProfileIMG.png" alt="" width="19.31px" height="20px">
+          <img src="/home-images/DownArrow.png" alt="" width="19.31px" height="20px">
+        </div>
+      </div>
+    </div>
+  </nav>
+      
+    <div class="hero">
+        <div class="inner-hero-section">
+            <div>
+                <img src="/home-images/MovieName.png" alt="" class="lg:flex inner-hero-section-image"> 
+                <div class="flex items-center">
+                    <img src="/home-images/Top10Badge.png" alt="" class="mr-2"> 
+                    <h1 class="text-3xl">Number 4 in Turkey Today</h1>
+                </di>
+            </div>
+            
+                <p class="text-lg">Emir, who learned to fend for himself at a young age and worked hard to reach an important position in the business world, one day meets a street singer girl and his life changes.</p>
+            </div>
+            <div class="flex">
+                <button id="BTN-1" class="flex items-center mr-4 BTN-1">
+                  <img src="/home-images/Play.png" alt="" width="20px">
+                  <span class="ml-1">Play</span>
+                </button>
+                <button id="BTN-2" class="flex items-center BTN-1">
+                  <img src="/home-images/Vector (3).png" alt="" width="20px">
+                  <span class="ml-1">More information</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-images">
+            <div>
+                <h2 class="text-4xl">Popular on Netflix</h2>
+            </div>
+            <div class="slides-container">
+                <img src="/home-images/MoviePoster (1).png" alt="" class="slide">
+                <img src="/home-images/MoviePoster (2).png" alt="" class="slide">
+                <img src="/home-images/MoviePoster (3).png" alt="" class="slide">
+                <img src="/home-images/MoviePoster (4).png" alt="" class="slide">
+                <img src="/home-images/MoviePoster (5).png" alt="" class="slide">
+                <img src="/home-images/MovieHorizontalCard (2).png" alt="" class="slide">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)"><img src="./home-images/ArrowLeft.png" alt=""></button>
+            <button class="next" onclick="changeSlide(1)"><img src="/home-images/Vector (1).png" alt=""></button>
+        </div>
+    </div>
+
+    <div class=" hero-images-1">
+        <div>
+            <h2 class="text-4xl">Kemal, Keep Watching</h2>
+        </div>
+        <div class="slides-container">
+            <img src="/home-images/MovieHorizontalCard (1).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (2).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (3).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (4).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (2).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard.png" alt="" class="slide">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)"><img src="/home-images/Vector (1).png" alt=""></button>
+    </div>
+    <div class=" hero-images-2">
+        <div>
+            <h2 class="text-4xl">On the agenda</h2>
+        </div>
+        <div class="slides-container">
+            <img src="/home-images/MoviePoster (1).png" alt="" class="slide">
+            <img src="/home-images/MoviePoster (6).png" alt="" class="slide">
+            <img src="/home-images/MoviePoster (2).png" alt="" class="slide">
+            <img src="/home-images/MoviePoster (4).png" alt="" class="slide">
+            <img src="/home-images/MoviePoster (5).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (5).png" alt="" class="slide">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)"><img src="/home-images/Vector (1).png" alt=""></button>
+    </div>
+    <div class=" hero-images-3">
+        <div>
+            <h2 class="text-4xl">Netflix Originals</h2>
+        </div>
+        <div class="slides-container">
+            <img src="/home-images/MovieVerticalCard.png" alt="" class="slide">
+            <img src="/home-images/MovieVerticalCard (1).png" alt="" class="slide">
+            <img src="/home-images/MovieVerticalCard (2).png" alt="" class="slide">
+            <img src="/home-images/MovieVerticalCard (3).png" alt="" class="slide">
+            <img src="/home-images/best-movies-on-netflix-the-mother-6478b59716093.jpg" alt="" class="slide">
+            <img src="/home-images/MovieVerticalCard (4).png" alt="" class="slide">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)"><img src="/home-images/Vector (1).png" alt=""></button>
+    </div>
+    <div class=" hero-images-4 ">
+        <div>
+            <h2 class="text-4xl top-10">Today's Top 10 List in Turkey</h2>
+        </div>
+        <div class="slides-container-1">
+            <img src="/home-images/RankCard (1).png" alt="" class="slide">
+            <img src="/home-images/RankCard (2).png" alt="" class="slide">
+            <img src="/home-images/RankCard (3).png" alt="" class="slide">
+            <img src="/home-images/RankCard (4).png" alt="" class="slide">
+            <img src="/home-images/RankCard (5).png" alt="" class="slide">
+        </div>
+
+    </div>
+    <div class="hero-images-5">
+        <div>
+            <h2 class="text-4xl">Watch again</h2>
+        </div>
+        <div class="slides-container-2">
+            <img src="/home-images/MovieHorizontalCard (11).png" alt="" class="slide">
+            <img src="/home-images/MoviePoster (7).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (6).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (7).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (9).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (10).png" alt="" class="slide">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)"><img src="/home-images/Vector (1).png" alt=""></button>
+    </div>
+    <div class="hero-images-6">
+        <div>
+            <h2 class="text-4xl">My list</h2>
+        </div>
+        <div class="slides-container">
+            <img src="/home-images/MoviePoster (9).png" alt="" class="slide">
+            <img src="/home-images/MoviePoster (8).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (14).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (12).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (9).png" alt="" class="slide">
+            <img src="/home-images/MovieHorizontalCard (15).png" alt="" class="slide">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)"><img src="/home-images/Vector (1).png" alt=""></button>
+    </div>
+
+    <div class="footer">
+        <div class="lg:flex footer-images">
+            <img class=" ml-2" src="/home-images/Vector (4).png" alt="">
+            <img class=" ml-2 img-4" src="./home-images/Group (1).png" alt="">
+            <img class=" ml-2 img-4" src="./home-images/Group (2).png" alt="">
+            <img class=" ml-2 img-4" src="./home-images/Group (3).png" alt="">
+        </div>
+        <div class="footer-content">
+            <div class="col">
+                <a href="#">Voiceover and Subtitles</a>
+                <a href="#">Media Center</a>
+                <a href="#">Security</a>
+                <a href="#">Contact us</a>
+            </div>
+            <div class="col">
+                <a href="#">Audio Description</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Legal Provisions</a>
+            </div>
+            <div class="col">
+                <a href="#">Help center</a>
+                <a href="#">Job oppurtunities</a>
+                <a href="#">Cookie Preferences</a>
+            </div>
+            <div class="col">
+                <a href="#">Gift Cards</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Corporate Information</a>
+            </div>
+        </div>
+        <button class="English-btn">Service Code</button>
+        <p class="language">© 1997-2021 Netflix, Inc.  {i-062d573a0ee099242}</p>
+    </div>
+    
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+      
+        menuToggle.addEventListener('click', function () {
+          menu.classList.toggle('hidden');
+          iconOpen.classList.toggle('block');
+          iconClose.classList.toggle('block');
+        });
+      </script>
+      
+    <script src="/home.js"></script>
+</body>
+</html>
